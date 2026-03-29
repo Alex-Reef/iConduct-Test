@@ -1,17 +1,17 @@
 # iConduct API
 
-## ?? Description
+## Description
 
 The API provides two main endpoints for working with employee data:
 - **GetEmployeeById** - retrieve an employee with their subordinates in a tree structure
 - **EnableEmployee** - change the Enable flag for an employee
 
-## ?? Requirements
+## Requirements
 
 - .NET 10
 - MS SQL 2022
 
-## ?? Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -93,7 +93,7 @@ Body (raw JSON):
   }
 \\\
 
-## ?? Data Structure
+## Data Structure
 
 ### EmployeeDto (API response)
 
