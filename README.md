@@ -15,10 +15,8 @@ The API provides two main endpoints for working with employee data:
 
 ### 1. Clone the repository
 
-\\\bash
 git clone https://github.com/Alex-Reef/iConduct-Test.git
 cd iConduct_TEST
-\\\
 
 ### 2. Create a database
 
