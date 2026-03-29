@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\iConduct.Domain\iConduct.Domain.csproj" />
-    <ProjectReference Include="..\iConduct.Infrastucture\iConduct.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

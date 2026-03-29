@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\iConduct.Domain\iConduct.Domain.csproj" />
+    <ProjectReference Include="..\iConduct.Infrastucture\iConduct.Infrastructure.csproj" />
+    <ProjectReference Include="..\iConduct.Application\iConduct.Application.csproj" />
   </ItemGroup>
 
 </Project>
