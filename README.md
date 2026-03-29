@@ -15,14 +15,15 @@ The API provides two main endpoints for working with employee data:
 
 ### 1. Clone the repository
 
-git clone https://github.com/Alex-Reef/iConduct-Test.git
-cd iConduct_TEST
+`git clone https://github.com/Alex-Reef/iConduct-Test.git`
+
+`cd iConduct_TEST`
 
 ### 2. Create a database
 
 Create a database in MS SQL and execute the following SQL script:
 
-\\\sql
+```
 CREATE TABLE Employee (
     ID INT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(255) NOT NULL,
@@ -38,13 +39,13 @@ INSERT INTO Employee(Name, ManagerId)
         ('Andrey', NULL),
         ('Alexey', 2),
         ('Roman', 2)
-\\\
+```
 
 ### 3. Configure the connection
 
-Update \appsettings.json\ with your MS SQL connection string:
+Update `appsettings.json` with your MS SQL connection string:
 
-\\\json
+```
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=iconduct;Trusted_Connection=True;"
@@ -57,57 +58,56 @@ Update \appsettings.json\ with your MS SQL connection string:
   },
   "AllowedHosts": "*"
 }
-\\\
+```
 
 ### 4. Run the application
 
-\\\bash
-dotnet run
-\\\
+`dotnet run`
 
-The API will be available at: \https://localhost:5000\ or \http://localhost:5001\
+The API will be available at: `https://localhost:5000` or `http://localhost:5001`
 
-## ?? API Endpoints
+## API Endpoints
 
 #### 1. Get an employee
 
-\\\
 Method: GET
+
 URL: https://localhost:5000/api/employee/1
+
 Headers:
   - Accept: application/json
-\\\
 
 #### 2. Update Enable status
 
-\\\
 Method: PUT
+
 URL: https://localhost:5000/api/employee/2/enable
+
 Headers:
   - Content-Type: application/json
+
 Body (raw JSON):
   {
-    \"enable\": false
+    "enable": false
   }
-\\\
 
 ## Data Structure
 
 ### EmployeeDto (API response)
 
-\\\json
+```
 {
-  \"id\": 1,
-  \"name\": \"Andrey\",
-  \"managerId\": null,
-  \"enable\": true
+  "id": 1,
+  "name": "Andrey",
+  "managerId": null,
+  "enable": true
 }
-\\\
+```
 
 ### UpdateEmployeeRequest (request body)
 
-\\\json
+```
 {
-  \"enable\": true
+  "enable": true
 }
-\\\
+```
