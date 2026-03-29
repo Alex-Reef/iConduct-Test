@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="iConduct.Application/iConduct.Application.csproj" />
+  <Project Path="iConduct.Domain/iConduct.Domain.csproj" />
+  <Project Path="iConduct.Infrastucture/iConduct.Infrastucture.csproj" />
+  <Project Path="iConduct_TEST/iConduct.API.csproj" />
+</Solution>
